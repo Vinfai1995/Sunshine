@@ -12,7 +12,7 @@ public class SettingActivity extends PreferenceActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.pref_genaral);
+        addPreferencesFromResource(R.xml.pref_general);
         //调用bingPreferenceSummaryToValue() 方法，并把key传入
         bindPreferenceSummaryToValue(findPreference(getString(R.string.pref_location_key)));
         bindPreferenceSummaryToValue(findPreference(getString(R.string.pref_units_key)));
